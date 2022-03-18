@@ -236,9 +236,6 @@ fetch(
   .then((response) => response.json())
   .then((data) => console.log(data));
 
-const collection = document.getElementsByClassName("s1");
-collection.innerHTML = data.title;
-
 var noOdds = (values) => values.filter((x) => x % 2 === 0);
 
 function noOdds(values) {
@@ -284,21 +281,10 @@ async () => {
   }
 };
 
-func();
-
 function myBio(firstName, lastName, company) {
   console.log(`${firstName} ${lastName} runs${company}`);
 }
 myBio(...["aa", "bb", "cc"]);
-
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
 
 function anagrams(stringA, stringB) {
   return cleanString(stringA) === cleanString(stringB);
