@@ -320,5 +320,6 @@ console.log(solution([2, 5, 5, 1, 3, 23, 234]));
 function roundToNext5(n) {
   return Math.ceil(n / 5) * 5;
 }
+// can put any number here and it'll be converted to next multiple number of 5
 
 console.log(roundToNext5(6));
