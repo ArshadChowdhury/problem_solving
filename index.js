@@ -1,10 +1,10 @@
+// iterate over array and build a hash table:
+// KEY is the complement!
+// VALUE is the index!
+// each iteration, you check back against what has already been placed in the hash map
+
 var twoSum = function (nums, target) {
   const { append } = require("express/lib/response");
-
-  // iterate over array and build a hash table:
-  // KEY is the complement!
-  // VALUE is the index!
-  // each iteration, you check back against what has already been placed in the hash map
 
   let result = [];
 
@@ -308,8 +308,17 @@ function solution(nums) {
   if (nums === null) {
     return [];
   } else {
-    return [].slice.call(nums).sort((a, b) => a - b);
+    // use a - b for small to large & b - a for large to small
+    return [].slice.call(nums).sort((a, b) => b - a);
   }
 }
 
 console.log(solution([2, 5, 5, 1, 3, 23, 234]));
+
+// Given an integer as input, can you round it to the next (meaning, "higher") multiple of 5?
+
+function roundToNext5(n) {
+  return Math.ceil(n / 5) * 5;
+}
+
+console.log(roundToNext5(6));
