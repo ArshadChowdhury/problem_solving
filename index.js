@@ -326,3 +326,9 @@ console.log(roundToNext5(6));
 
 // I sort of have this different problem now, I'm going to sit for bar exam in 2 months
 // I need to study 1000 pages in total, so I need to study 20 pages on average per day.
+
+// After studying each day I'll write a console log in here to sort of keep a track
+
+let pages = "20 pages";
+
+console.log(`Day 1 ${pages} done`);
