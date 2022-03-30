@@ -323,3 +323,6 @@ function roundToNext5(n) {
 // can put any number here and it'll be converted to next multiple number of 5
 
 console.log(roundToNext5(6));
+
+// I sort of have this different problem now, I'm going to sit for bar exam in 2 months
+// I need to study 1000 pages in total, so I need to study 20 pages on average per day.
