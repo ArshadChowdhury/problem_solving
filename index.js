@@ -332,3 +332,4 @@ console.log(roundToNext5(6));
 let pages = "20 pages";
 
 console.log(`Day 1 ${pages} done`);
+console.log(`Day 2 ${pages} done`);
